@@ -1,0 +1,26 @@
+<head>
+  <title>{{title}}</title>
+</head>
+
+<div class="row d-flex justify-content-center mt-2">
+<button type="button" (click)="getTime()">Get current time</button>
+<br><h4 align="center">{{localTime}}</h4>
+
+<div>
+<h2>Pick a number : {{myNumber}}</h2>
+<button type="button" (click)="incNum()"> +1 </button>
+<button type="button" (click)="decNum()"> -1 </button>
+<br><br>
+</div>
+
+<button type="button" (click)="togglePhoto()">{{buttonName}}</button>
+<br><br>
+
+<div>
+<ng-container *ngIf="showhide">
+  <div  align="center"><img src="assets/img_1.png" alt="My image" width="300px"></div>
+
+</ng-container>
+</div>
+
+</div>
